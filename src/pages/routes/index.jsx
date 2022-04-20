@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 
 
-const index = () => {
+const Index = () => {
 
     const router = useRouter();
     const simpleNavigation = (url) =>{
@@ -26,14 +26,14 @@ const index = () => {
         <div>
             <h1>Index Routes:</h1>
             <ul>
-                <Link href="/routes/params?id=12&name=ana">
+                <Link href="/routes/params?id=12&name=ana" passHref>
                     <li><a href="
                     ">Params</a></li>
                 </Link>
 
-                <Link href="/routes/123/find"><li>Find</li></Link>
+                <Link href="/routes/123/find" ><a href=""><li>Find</li></a></Link>
 
-                <Link href="/routes/123/Arthur"><li>Arthur</li></Link>
+                <Link href="/routes/123/Arthur" passHref><li>Arthur</li></Link>
 
             </ul>
 
@@ -53,4 +53,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

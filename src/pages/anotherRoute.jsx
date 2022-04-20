@@ -1,9 +1,9 @@
 import React from 'react'
 
-const anotherRoute = () => {
+const AnotherRoute = () => {
   return (
-    <div>anotherRoute</div>
+    <div>A</div>
   )
 }
 
-export default anotherRoute
+export default AnotherRoute

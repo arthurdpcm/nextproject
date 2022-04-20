@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link';
-const find = () => {
+const Find = () => {
   const router = useRouter();
   const id = router.query.id
   console.log(router)
@@ -9,11 +9,11 @@ const find = () => {
   return (
     <div>
       <h1>{id}</h1>
-      <Link href="/routes">
+      <Link href="/routes" passHref>
           <button>Voltar</button>
       </Link>
     </div>
   )
 }
 
-export default find
+export default Find
